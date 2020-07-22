@@ -1,15 +1,18 @@
 # add-meta-analytics
 
 Add additional Analytics metadata based upon metadata from the current result.
-For example: you want to sent the Author or Accountname to a custom analytics event.
-*** Make sure that all the `analyticsFields` defined are created as `Dimensions` in your Coveo Cloud Organization. ***
+For example: you want to sent the Author or Accountname to a custom analytics event for use in a ML model.
+
+** Make sure that all the `analyticsFields` defined are created as `Dimensions` in your Coveo Cloud Organization. **
+
 
 There are two components:
 ## CoveoAddMetaAnalytics
 To define the metadata and fields which you want to sent.
 ## CoveoSendMetaAnalytics
 This component will gather all the `AddMetaAnalytics` definitions and will send them to the Analytics.
-*** So without `CoveoSendMetaAnalytics` nothing will happen!!! ***
+
+** So without `CoveoSendMetaAnalytics` nothing will happen!!! **
 
 Disclaimer: This component was built by the community at large and is not an official Coveo JSUI Component. Use this component at your own risk.
 
